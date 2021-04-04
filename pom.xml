@@ -8,6 +8,12 @@
     <artifactId>forkjoin</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.0.RELEASE</version>
+    </parent>
+
     <name>forkjoin</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
@@ -19,6 +25,13 @@
     </properties>
 
     <dependencies>
+
+        <!-- rabbitmq依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
